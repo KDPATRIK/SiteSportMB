@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Полезные рецепты</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8f0;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #43a047 0%, #2e7d32 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .recipe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .recipe-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .recipe-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .recipe-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .recipe-content {
+            padding: 1.5rem;
+        }
+
+        .recipe-title {
+            color: #2e7d32;
+            margin: 0 0 1rem 0;
+        }
+
+        .recipe-info {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .ingredients-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1rem;
+        }
+
+        .ingredients-list li {
+            margin-bottom: 0.5rem;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .ingredients-list li::before {
+            content: "🌱";
+            position: absolute;
+            left: 0;
+        }
+
+        .instructions {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: #f1f8e9;
+            border-radius: 8px;
+        }
+
+        .nutrition-info {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+
+        .button {
+            display: inline-block;
+            background: #43a047;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background: #2e7d32;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Полезные рецепты</h1>
+        <p>Вкусно и полезно для здорового образа жизни</p>
+    </header>
+
+    <div class="container">
+        <div class="recipe-grid">
+            <div class="recipe-card">
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd" alt="Салат" class="recipe-image">
+                <div class="recipe-content">
+                    <h2 class="recipe-title">Киноа с овощами</h2>
+                    <div class="recipe-info">
+                        <span>🕒 30 минут</span>
+                        <span>🔥 320 ккал</span>
+                    </div>
+                    <h3>Ингредиенты:</h3>
+                    <ul class="ingredients-list">
+                        <li>Киноа - 1 стакан</li>
+                        <li>Брокколи - 200г</li>
+                        <li>Морковь - 2 шт</li>
+                        <li>Перец болгарский - 1 шт</li>
+                        <li>Оливковое масло - 2 ст.л.</li>
+                    </ul>
+                    <div class="instructions">
+                        <h3>Приготовление:</h3>
+                        <p>1. Промойте киноа и отварите согласно инструкции</p>
+                        <p>2. Нарежьте овощи и обжарьте на оливковом масле</p>
+                        <p>3. Смешайте киноа с овощами, приправьте по вкусу</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <img src="https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea" alt="Смузи" class="recipe-image">
+                <div class="recipe-content">
+                    <h2 class="recipe-title">Зеленый смузи</h2>
+                    <div class="recipe-info">
+                        <span>🕒 10 минут</span>
+                        <span>🔥 150 ккал</span>
+                    </div>
+                    <h3>Ингредиенты:</h3>
+                    <ul class="ingredients-list">
+                        <li>Шпинат - 2 горсти</li>
+                        <li>Банан - 1 шт</li>
+                        <li>Яблоко - 1 шт</li>
+                        <li>Вода или молоко - 200мл</li>
+                        <li>Мед - 1 ч.л. (по желанию)</li>
+                    </ul>
+                    <div class="instructions">
+                        <h3>Приготовление:</h3>
+                        <p>1. Все ингредиенты поместите в блендер</p>
+                        <p>2. Взбив��йте до однородной консистенции</p>
+                        <p>3. При желании добавьте мед</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <img src="https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea" alt="Овсянка" class="recipe-image">
+                <div class="recipe-content">
+                    <h2 class="recipe-title">Полезная овсянка</h2>
+                    <div class="recipe-info">
+                        <span>🕒 15 минут</span>
+                        <span>🔥 280 ккал</span>
+                    </div>
+                    <h3>Ингредиенты:</h3>
+                    <ul class="ingredients-list">
+                        <li>Овсяные хлопья - 50г</li>
+                        <li>Молоко или вода - 200мл</li>
+                        <li>Ягоды - горсть</li>
+                        <li>Орехи - 15г</li>
+                        <li>Корица - по вкусу</li>
+                    </ul>
+                    <div class="instructions">
+                        <h3>Приготовление:</h3>
+                        <p>1. Залейте хлопья молоком или водой</p>
+                        <p>2. Доведите до кипения и варите 5 минут</p>
+                        <p>3. Добавьте ягоды, орехи и корицу</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <a href="test2.html" class="button">Назад</a>
+            <a href="test.html" class="button">О проекте</a>
+        </div>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Здоровое питание</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8f0;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #43a047 0%, #2e7d32 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            background-color: #2e7d32;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #81c784;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .food-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .food-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .food-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .food-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .tips-list {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .tips-list h2 {
+            color: #2e7d32;
+            margin-bottom: 1.5rem;
+        }
+
+        .tips-list ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .tips-list li {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: #f1f8e9;
+            border-radius: 8px;
+            border-left: 4px solid #43a047;
+        }
+
+        .back-button {
+            display: inline-block;
+            background: #43a047;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            background: #2e7d32;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Здоровое питание</h1>
+        <p>Ваш путь к здоровому образу жизни</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="tips.html">Советы</a></li>
+            <li><a href="recipes.html">Рецепты</a></li>
+            <li><a href="water.html">Вода</a></li>
+            <li><a href="sport.html">Спорт</a></li>
+            <li><a href="test.html">О проекте</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="products">
+            <h2>Полезные продукты</h2>
+            <div class="food-grid">
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea" alt="Овощи">
+                    <h3>Свежие овощи</h3>
+                    <p>Богаты витаминами, минералами и клетчаткой. Помогают укрепить иммунитет и поддержать здоровье организма.</p>
+                </div>
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7" alt="Фрукты">
+                    <h3>Фрукты</h3>
+                    <p>Природные источники антиоксидантов, витаминов и минералов. Укрепляют иммунитет и улучшают самочувствие.</p>
+                </div>
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1486887396153-fa416526c108" alt="Злаки">
+                    <h3>Цельные злаки</h3>
+                    <p>Содержат сложные углеводы, клетчатку и белок. Обеспечивают организм энергией на длительное время.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tips" class="tips-list">
+            <h2>Советы по здоровому питанию</h2>
+            <ul>
+                <li>🥗 Включайте в рацион больше свежих овощей и фруктов</li>
+                <li>🍯 Ограничьте потребление сахара и сладостей</li>
+                <li>💧 Пейте достаточно воды (2-2.5 литра в день)</li>
+                <li>🌾 Отдавайте предпочтение цельнозерновым продуктам</li>
+                <li>🍽️ Контролируйте размер порций</li>
+                <li>⏰ Соблюдайте режим питания</li>
+                <li>🐟 Употребляйте больше рыбы и морепродуктов</li>
+                <li>🥜 Включайте в рацион орехи и семена</li>
+            </ul>
+        </section>
+
+        <a href="test.html" class="back-button">О проекте</a>
+    </div>
+
+    <footer>
+        <p>© 2024 Здоровое питание. Все права защищены.</p>
+    </footer>
+</body>
+</html>

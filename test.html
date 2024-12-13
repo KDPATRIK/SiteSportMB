@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О проекте</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+        
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-family: 'Lobster', cursive;
+            color: #ff6b6b;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .creators {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .creators h2 {
+            color: #ff6b6b;
+            font-family: 'Lobster', cursive;
+            margin-bottom: 15px;
+        }
+
+        .creator {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-left: 4px solid #ff6b6b;
+            background: #fff5f5;
+        }
+
+        .project-info {
+            margin-top: 30px;
+        }
+
+        .project-info h2 {
+            color: #ff6b6b;
+            font-family: 'Lobster', cursive;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background: #fff5f5;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .feature-list li::before {
+            content: "❤️";
+            margin-right: 10px;
+        }
+
+        .back-button {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            background: #ff5252;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>О нашем проекте</h1>
+        </div>
+
+        <div class="creators">
+            <h2>Создатели проекта:</h2>
+            <div class="creator">
+                <strong>Слободской Ярослав</strong> - разработчик
+            </div>
+            <div class="creator">
+                <strong>Искра Андрей</strong> - разработчик
+            </div>
+        </div>
+
+        <div class="project-info">
+            <h2>О проекте</h2>
+            <p>
+                Этот проект был создан для урока "Развитие Личности". 
+                Мы постарались сделать его информативным и полезным, 
+                чтобы помочь людям узнать больше о правильном питании и здоровом образе жизни.
+            </p>
+
+            <h2>Особенности проекта:</h2>
+            <ul class="feature-list">
+                <li>Анимированные элементы и эффекты</li>
+                <li>Адаптивный дизайн для всех устройств</li>
+                <li>Красивые градиентные фоны</li>
+                <li>Стильные шрифты и оформление</li>
+                <li>Интерактивные элементы</li>
+                <li>Плавные анимации переходов</li>
+            </ul>
+
+            <h2>Технологии:</h2>
+            <ul class="feature-list">
+                <li>HTML5</li>
+                <li>CSS3 (Анимации и трансформации)</li>
+                <li>JavaScript (Интерактивные элементы)</li>
+                <li>Современные веб-шрифты</li>
+            </ul>
+        </div>
+
+        <a href="test2.html" class="back-button">На главную</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вода и здоровье</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e3f2fd;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #03a9f4 0%, #0288d1 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .water-section {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .water-facts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .fact-card {
+            background: #f5f5f5;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #03a9f4;
+        }
+
+        h2 {
+            color: #0288d1;
+            margin-bottom: 1.5rem;
+        }
+
+        h3 {
+            color: #0288d1;
+            margin-bottom: 1rem;
+        }
+
+        .benefits-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .benefits-list li {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: #e3f2fd;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        .benefits-list li::before {
+            content: "💧";
+            margin-right: 10px;
+        }
+
+        .calculator {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+
+        .button {
+            display: inline-block;
+            background: #03a9f4;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background: #0288d1;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .daily-schedule {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-top: 1.5rem;
+        }
+
+        .schedule-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .schedule-list li {
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+            background: #e3f2fd;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .water-section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Вода - источник жизни</h1>
+        <p>Узнайте всё о пользе воды для вашего организма</p>
+    </header>
+
+    <div class="container">
+        <div class="water-section">
+            <h2>Почему вода так важна?</h2>
+            <div class="water-facts">
+                <div class="fact-card">
+                    <h3>Состав тела</h3>
+                    <p>Человеческое тело на 60-70% состоит из воды. Мозг содержит 75% воды, кровь - 92%, кости - 22%.</p>
+                </div>
+                <div class="fact-card">
+                    <h3>Ежедневная потеря</h3>
+                    <p>Каждый день человек теряет около 2-3 литров воды через дыхание, пот и естественные процессы.</p>
+                </div>
+                <div class="fact-card">
+                    <h3>Потребность</h3>
+                    <p>Рекомендуемая норма потребления воды - 30 мл на 1 кг веса тела.</p>
+                </div>
+            </div>
+
+            <h2>Польза воды для организма</h2>
+            <ul class="benefits-list">
+                <li>Регулирует температуру тела</li>
+                <li>Помогает выводить токсины</li>
+                <li>Улучшает работу мозга</li>
+                <li>Поддерживает здоровье кожи</li>
+                <li>Способствует пищеварению</li>
+                <li>Предотвращает обезвоживание</li>
+                <li>Улучшает кровообращение</li>
+                <li>Поддерживает работу суставов</li>
+            </ul>
+
+            <div class="daily-schedule">
+                <h2>График питья воды</h2>
+                <ul class="schedule-list">
+                    <li>🌅 После пробуждения: 1-2 стакана воды</li>
+                    <li>🍳 За 30 минут до завтрака: 1 стакан</li>
+                    <li>🏃‍♂️ Между завтраком и обедом: 2-3 стакана</li>
+                    <li>🍜 За 30 минут до обеда: 1 стакан</li>
+                    <li>📚 Между обедом и ужином: 2-3 стакана</li>
+                    <li>🌙 За 2 часа до сна: 1 стакан</li>
+                </ul>
+            </div>
+
+            <div class="calculator">
+                <h2>Важные рекомендации</h2>
+                <ul class="benefits-list">
+                    <li>Пейте воду комнатной температуры</li>
+                    <li>Не заменяйте воду сладкими напитками</li>
+                    <li>Увеличивайте потребление воды при физических нагрузках</li>
+                    <li>Следите за цветом мочи (должна быть светло-желтой)</li>
+                    <li>Держите бутылку воды всегда под рукой</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <a href="test2.html" class="button">Назад</a>
+            <a href="test.html" class="button">О проекте</a>
+        </div>
+    </div>
+</body>
+</html> 
